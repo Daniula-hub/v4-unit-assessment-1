@@ -1,0 +1,62 @@
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+}
+header {
+    background-color: darksalmon;
+    margin-bottom: 50px;
+    
+}
+
+h1{
+    display:inline-block;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.article1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 5px dotted black;
+    text-align: right;
+    font-size: 20px;
+    float: right; 
+}
+
+.article2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 5px dotted black;
+    text-align: left;
+    font-size: 20px;
+    float: left;
+}
+
+h2 {
+text-align: left;
+}
+
+.Javaicon {
+width: 70px;
+height: 70px;
+display: flex;
+flex-direction:column;
+float: left;
+}
+
+.cssicon {
+width: 70px;
+height: 70px;
+display: flex;
+flex-direction:column;
+float: right;
+}
