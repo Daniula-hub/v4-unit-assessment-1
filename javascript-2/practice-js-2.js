@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+var gitDefinition = "Git helps me control my work progress";//CODE HERE
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+var gitHubDefinition = " Is a website where all my projects- repos are storage and other people can use them if they are public"; //CODE HERE
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -33,7 +33,10 @@
     following the guidelines above to describe the init command.
 */
 
-//CODE HERE
+let init = { 
+    description: 'initialize repo',
+    code: 'git init',
+};//CODE HERE
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -41,7 +44,10 @@
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
+let clone = {
+    description: 'git clone attach the code to my terminal',
+    code: 'git clone',
+};//CODE HERE
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -49,7 +55,10 @@
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+let status = {
+    description: 'checks the status or progress of what iam doing in the code',
+    code: 'git status',
+};//CODE HERE
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,7 +66,10 @@
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+let add ={
+    description: 'adds new code that we were working on',
+    code: 'git add .',
+}//CODE HERE
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,7 +77,10 @@
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+let commit ={
+    description: 'message describing what we were working on, or changing, or adding',
+    code: 'git commit -m " " ',
+};//CODE HERE
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,7 +88,10 @@
     following the guidelines above to describe the command to add a remote location to your git repository.
 */
 
-//CODE HERE
+let addRemote ={
+    description: 'when we copy the url of another repo, git creates a remote name origin and points to it',
+    code: 'git remote add origin',
+};//CODE HERE
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -81,4 +99,7 @@
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+let push = {
+    description: 'sends a copy of the cope to Github',
+    code: 'git push',
+};//CODE HERE

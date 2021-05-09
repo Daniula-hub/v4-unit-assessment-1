@@ -1,17 +1,17 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-//CODE HERE 
+var myName = "Daniela" //CODE HERE 
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-//CODE HERE
+var faveNum = 25 //CODE HERE
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
-//CODE HERE
+var lovesCode = true //CODE HERE
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -19,7 +19,9 @@
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
+function sum (num1,num2 ){
+return num1 + num2
+}//CODE HERE
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -29,7 +31,13 @@
   If 'data' is a falsy value, return a false boolean.
 */
 
-//CODE HERE
+function trueOrFalse (data){
+  if (data === data){
+    return True
+  } else {
+    return False
+  }
+}//CODE HERE
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -39,7 +47,9 @@
   If the number is even, return the string: 'the number is even'.
 */
 
-//CODE HERE
+function oddChecker (num){
+
+} //CODE HERE
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -48,6 +58,10 @@
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
+// function iLove (name love) {
+// return `${name} loves ${love}`;
+// };
+// iLove ('NAMEPARAM', 'LOVEPARAM');
 //CODE HERE
 
 
@@ -56,12 +70,12 @@
 
 const faveColors = ['red', 'green', 'black']
 
-//CODE HERE
+let colorCopy =faveColors.slice()//CODE HERE
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-//CODE HERE
+colorCopy.push(pink);//CODE HERE
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -71,7 +85,7 @@ const faveColors = ['red', 'green', 'black']
 
 const numbers = [1, 2, 3, 4, 5]
 
-//CODE HERE
+let middleNums = numbers.slice(1,4);//CODE HERE
 
 //////////////////PROBLEM 11////////////////////
 /*
