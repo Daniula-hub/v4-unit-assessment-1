@@ -31,13 +31,15 @@ return num1 + num2
   If 'data' is a falsy value, return a false boolean.
 */
 
+let data = true;
+
 function trueOrFalse (data){
-  if (data === data){
-    return True
+  if (data){   
+    return True 
   } else {
     return False
   }
-}//CODE HERE
+};//CODE HERE
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -47,9 +49,14 @@ function trueOrFalse (data){
   If the number is even, return the string: 'the number is even'.
 */
 
-function oddChecker (num){
-
-} //CODE HERE
+// function oddChecker (num){
+// for (num % 2 === 1 ) {
+// return 'the number is odd'
+// } else {
+//   return 'the number is even'
+// }
+// }; 
+//CODE HERE
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -58,10 +65,10 @@ function oddChecker (num){
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-// function iLove (name love) {
-// return `${name} loves ${love}`;
+// function iLove (name, love) {
+// return 'name + loves + love'
 // };
-// iLove ('NAMEPARAM', 'LOVEPARAM');
+// iLove (NAMEPARAM, LOVEPARAM);
 //CODE HERE
 
 
@@ -70,12 +77,14 @@ function oddChecker (num){
 
 const faveColors = ['red', 'green', 'black']
 
-let colorCopy =faveColors.slice()//CODE HERE
+let colorCopy = faveColors.slice()
+//CODE HERE
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-colorCopy.push(pink);//CODE HERE
+colorCopy.push('pink');
+//CODE HERE
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -85,7 +94,7 @@ colorCopy.push(pink);//CODE HERE
 
 const numbers = [1, 2, 3, 4, 5]
 
-let middleNums = numbers.slice(1,4);//CODE HERE
+let middleNums = numbers.slice(1, 4);//CODE HERE
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -101,6 +110,14 @@ let middleNums = numbers.slice(1,4);//CODE HERE
   For example: 'Hello! My name is Joseph and I live in Utah"
 */
 
+let me = {
+firstName: 'Daniela',
+state : 'Texas',
+age: 32,
+greeter: function (){
+return 'Hello! My name is me.firstName and I live in me.state'
+},
+};
 //CODE HERE
 
 //////////////////PROBLEM 12////////////////////
@@ -116,7 +133,18 @@ let middleNums = numbers.slice(1,4);//CODE HERE
   Return the answers array inside of the function.
 */
 
+// function bigOrSmall (arr) {
+// let answers =  [ ];
+// for ( let i=0; i < arr.length; i++ )
+// if ( arr[i] > 100 ){
+//     answers.push('big')
+// } else ( arr[i] <= 100 ) {
+//     answers.push('small')
+//   }
+// };
+
 // CODE HERE
+
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -128,22 +156,30 @@ let middleNums = numbers.slice(1,4);//CODE HERE
   Finally, return the 'reversed' array variable.
 */
 
+function arrayReverser (arr){
+let reversed = [ ];
+for ( let i = reversed.length -1; i < 0; i-- ){
+  ++ reversed[i] 
+}
+return reversed
+};
+
 //CODE HERE
 
 //////////////////PROBLEM 14////////////////////
 
-let global = 'cool string'
+// let global = 'cool string'
 
-function firstFunction() {
-  let outer = 'awesome string'
-  function innerFunction() {
-    let inner = 'fun string'
-  }
-}
+// function firstFunction() {
+//   let outer = 'awesome string'
+//   function innerFunction() {
+//     let inner = 'fun string'
+//   }
+// }
 
-function secondFunction() {
-  let functional = 'lonely string'
-}
+// function secondFunction() {
+//   let functional = 'lonely string'
+// }
 
 /*
   There are 4 variables above: global, outer, inner and functional
@@ -154,16 +190,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global',  'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -172,6 +208,10 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Invoke the callback passing the first item in the array as an argument.
 */
 
+function firstItem (array, callback) {
+  callback(array[0])
+};
+ 
 //CODE HERE
 
 //////////////////PROBLEM 16////////////////////
@@ -182,7 +222,13 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Otherwise, invoke the callback passing in false.
 */
 
-//CODE HERE
+function isItBob (obj, callback) {
+if (obj.name === 'Bob'){
+return callback(true)
+} else {
+return callback(false)
+}
+};//CODE HERE
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -191,7 +237,15 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Then invoke the callback, passing in the doubled array.
 */
 
+function giveMeDoubles (array, callback){
+for ( let i = 0; i < array.length; i ++ ) {
+  array[i] *= 2;
+}
+callback (array)
+};
 //CODE HERE
+
+
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -217,5 +271,19 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
     isNew: true
   }
 */
+
+function carFactory (make, model, year){
+  let carObj= {
+make, 
+model,
+year,
+};
+
+if ( year >= 2018){
+  carObj.isNew = true;
+ } else { carObj.isNew = false;
+}
+return carObj
+};
 
 //CODE HERE
