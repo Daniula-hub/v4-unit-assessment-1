@@ -35,9 +35,9 @@ let data = true;
 
 function trueOrFalse (data){
   if (data){   
-    return True 
+    return true 
   } else {
-    return False
+    return false
   }
 };//CODE HERE
 
@@ -49,13 +49,14 @@ function trueOrFalse (data){
   If the number is even, return the string: 'the number is even'.
 */
 
-// function oddChecker (num){
-// for (num % 2 === 1 ) {
-// return 'the number is odd'
-// } else {
-//   return 'the number is even'
-// }
-// }; 
+function oddChecker (num){
+if (num % 2 === 1 ) {
+return 'the number is odd'
+} else {
+  return 'the number is even'
+}
+}; 
+
 //CODE HERE
 
 //////////////////PROBLEM 7////////////////////
@@ -65,10 +66,11 @@ function trueOrFalse (data){
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-// function iLove (name, love) {
-// return 'name + loves + love'
-// };
-// iLove (NAMEPARAM, LOVEPARAM);
+function iLove(name, love) {
+return `${name} loves ${love}`
+};
+
+
 //CODE HERE
 
 
@@ -77,7 +79,7 @@ function trueOrFalse (data){
 
 const faveColors = ['red', 'green', 'black']
 
-let colorCopy = faveColors.slice()
+let colorCopy = faveColors.slice();
 //CODE HERE
 
 //////////////////PROBLEM 9////////////////////
@@ -133,15 +135,16 @@ return 'Hello! My name is me.firstName and I live in me.state'
   Return the answers array inside of the function.
 */
 
-// function bigOrSmall (arr) {
-// let answers =  [ ];
-// for ( let i=0; i < arr.length; i++ )
-// if ( arr[i] > 100 ){
-//     answers.push('big')
-// } else ( arr[i] <= 100 ) {
-//     answers.push('small')
-//   }
-// };
+function bigOrSmall (arr) {
+let answers =  [ ];
+for ( let i=0; i < arr.length; i++ )
+if ( arr[i] > 100 ){
+    answers.push('big')
+} else if ( arr[i] <= 100 ) {
+    answers.push('small')
+  }
+  return answers
+};
 
 // CODE HERE
 
@@ -158,8 +161,8 @@ return 'Hello! My name is me.firstName and I live in me.state'
 
 function arrayReverser (arr){
 let reversed = [ ];
-for ( let i = reversed.length -1; i < 0; i-- ){
-  ++ reversed[i] 
+for ( let i = arr.length -1; i >= 0; i-- ){
+  reversed.push(arr[i]);
 }
 return reversed
 };
@@ -168,18 +171,18 @@ return reversed
 
 //////////////////PROBLEM 14////////////////////
 
-// let global = 'cool string'
+let global = 'cool string'
 
-// function firstFunction() {
-//   let outer = 'awesome string'
-//   function innerFunction() {
-//     let inner = 'fun string'
-//   }
-// }
+function firstFunction() {
+  let outer = 'awesome string'
+  function innerFunction() {
+    let inner = 'fun string'
+  }
+}
 
-// function secondFunction() {
-//   let functional = 'lonely string'
-// }
+function secondFunction() {
+  let functional = 'lonely string'
+}
 
 /*
   There are 4 variables above: global, outer, inner and functional
