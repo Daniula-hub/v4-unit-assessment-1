@@ -5,58 +5,99 @@ box-sizing: border-box;
 }
 
 body {
-    padding: 15px;
+margin:0;
+padding:0;
+box-sizing: border-box;
 }
+
 header {
-    background-color: darksalmon;
-    margin-bottom: 50px;
-    
-}
+    background-color: #df8282;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    align-items: center;
+    padding: 55px;
+
+   }
 
 h1{
     display:inline-block;
+    font-size: 30px;
+    margin-right: 100px;
+   
 }
 
 li{
-    list-style: none;
-    text-decoration: none;
     display:inline-block;
+    justify-content: space-between;
+    margin-right: 100px;
+    
+    
+    
 }
+
 
 .article1 {
     margin-top: 5px;
     margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     border: 5px dotted black;
-    text-align: right;
-    font-size: 20px;
-    float: right; 
 }
 
 .article2 {
     margin-top: 5px;
     margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     border: 5px dotted black;
-    text-align: left;
-    font-size: 20px;
     float: left;
 }
 
 h2 {
 text-align: left;
+margin-top: 50px;
+margin-left: 30px;
+margin-bottom: 40px;
+}
+
+.First{
+    justify-content: right;
+     margin-right: 50px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    text-align: left;
+}
+
+.Second{
+    margin-left: 50px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: left;
 }
 
 .Javaicon {
-width: 70px;
-height: 70px;
+width: 100px;
+height: 100px;
 display: flex;
-flex-direction:column;
+flex-direction:row;
+margin-left: 25px;
 float: left;
+margin-right: 30px;
+
 }
 
 .cssicon {
-width: 70px;
-height: 70px;
+width: 100px;
+height: 100px;
 display: flex;
-flex-direction:column;
 float: right;
+margin-right: 25px;
+margin-bottom: 50px;
+
 }
