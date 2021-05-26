@@ -17,9 +17,10 @@ var yourName ='Daniela';//CODE HERE
 */
 
 function setGroceryListTitle (x){
-return 'Grocery List'
+return `${x}'s Grocery List`
 }; 
-setGroceryListTitle (XPARAMS)//CODE HERE
+
+//CODE HERE
 
 //////////////////STEP 4////////////////////
 /* 
@@ -44,7 +45,7 @@ function addItem (item){
 */
 
 function removeItem (index){
-groceries.splice(3,1);
+groceries.splice(index,1);
 displayData()
 }; //CODE HERE
 
@@ -60,15 +61,16 @@ displayData()
 */
 
 function checkGroceryCount() {
-//     for (let i=0; i>=groceries.length; i++){
-// if (groceries[i]>5){
-//     return That looks like a big trip
-// } else if (groceries[i]===1){
-//     return 1 item
-// } else if (groceries[i]>=1 && groceries[i]<=5){
-//     return NUMBEROFGROCERIES items
-// }
+    // for (let i=0; i< groceries.length; i++){
+if (groceries.length >5){
+    return 'That looks like a big trip' 
+} else if (groceries.length === 1){
+    return '1 item'
+} else if(groceries.length>=1 && groceries.length<=5){
+    return `${groceries.length} items`
+}
 };
+
 //CODE HERE
 
 

@@ -77,15 +77,19 @@ return `${name} loves ${love}`
 //////////////////PROBLEM 8////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-const faveColors = ['red', 'green', 'black']
+let faveColors = ['red', 'green', 'black'];
 
 let colorCopy = faveColors.slice();
+
+
 //CODE HERE
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 colorCopy.push('pink');
+
+
 //CODE HERE
 
 //////////////////PROBLEM 10////////////////////
